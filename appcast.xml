@@ -9,6 +9,20 @@
     <language>en</language>
     <!-- make publish adds releases below this line, newest first -->
     <item>
+      <title>Wombat 0.5.2</title>
+      <pubDate>Mon, 26 Oct 2026 22:09:06 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>0.5.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[
+### Added
+
+- Settings has a Default App section that says which app opens Markdown files. Unless that's Wombat, a button, Make Wombat the Default, makes Wombat the default for every Markdown extension it knows (`.md`, `.markdown`, `.mdown`, `.mkd`, `.mkdn`, `.mdwn`, `.mdtxt`, `.mdtext` and `.mdx`), while plain text files stay with the app that opens them. Settings checks again when its window comes forward and when you switch back to Wombat, so a change made in Finder shows up. If the change fails, or macOS accepts it but still wouldn't open Markdown files in Wombat, a short alert gives Finder's steps instead. The Mac App Store version shows those steps (File › Get Info, Open with, Change All) in place of the button, because the App Sandbox keeps apps from changing the default app. README, the support page and the tester notes put the Settings button first and Finder's way second.
+]]></description>
+      <enclosure url="https://github.com/defiant/wombat-reader/releases/download/v0.5.2/Wombat-0.5.2.dmg" length="6312479" type="application/octet-stream" sparkle:edSignature="Z1ikiOBRdEa5xPbgG0WhR6okD6jah7hkGbaG/DoCwnHvavDhbKNn/moaVXMyANNtLI5g0UcnSreERc7rv0BTAg=="/>
+    </item>
+    <item>
       <title>Wombat 0.5.1</title>
       <pubDate>Mon, 26 Oct 2026 21:04:45 +0000</pubDate>
       <sparkle:version>6</sparkle:version>
