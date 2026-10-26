@@ -9,6 +9,25 @@
     <language>en</language>
     <!-- make publish adds releases below this line, newest first -->
     <item>
+      <title>Wombat 0.5.1</title>
+      <pubDate>Mon, 26 Oct 2026 21:04:45 +0000</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>0.5.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[
+### Added
+
+- File › Save… (⌘S) saves Markdown you pasted (File › New from Clipboard, ⌘V or a drop) as a `.md` file. The save panel suggests the pasted document's title as the name, with slashes and colons replaced and without a `.md` of its own, and the file holds the text exactly as pasted, line endings included. The window then shows that file like one you opened: its name in the title bar, links and images next to it, reloading when it changes, and in Open Recent. In the Mac App Store version, the folder access bar asks for its folder when images there need it. Save… is only for pasted text: Wombat still never changes a file it opened, won't save over a file a window shows or a link to one, and closes unsaved pasted text without asking. The support page says so.
+
+### Changed
+
+- A pasted document is titled after the title in its front matter, or else its first heading or line of text without Markdown or HTML markup, passing over logos, badges, code and tables. A pasted README that starts with a centered logo is titled by its heading rather than `<p align="center">`, and front matter no longer gives `---`.
+- The privacy policy says pasted text is written to disk only when you save it with File › Save…, where you choose in the save panel. It used to say Wombat never writes pasted text to disk.
+]]></description>
+      <enclosure url="https://github.com/defiant/wombat-reader/releases/download/v0.5.1/Wombat-0.5.1.dmg" length="6304371" type="application/octet-stream" sparkle:edSignature="NTcmEiIGr1QKPyQrkafzvpflV25QFSKeVoyYKw36hkVbRovmjCBABtrz0lVbq7+Q/UHgdAJE8pa5n52vZKsqDQ=="/>
+    </item>
+    <item>
       <title>Wombat 0.5.0</title>
       <pubDate>Mon, 26 Oct 2026 19:17:24 +0000</pubDate>
       <sparkle:version>5</sparkle:version>
