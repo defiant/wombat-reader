@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Wombat's update feed, which the download checks once a day (SUFeedURL in project.yml). `make publish`
+     adds each release at the top and keeps the older ones. -->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Wombat</title>
+    <link>https://defiant.github.io/wombat-reader/</link>
+    <description>New versions of Wombat, the Markdown viewer for Mac.</description>
+    <language>en</language>
+    <!-- make publish adds releases below this line, newest first -->
+    <item>
+      <title>Wombat 0.5.0</title>
+      <pubDate>Mon, 26 Oct 2026 19:17:24 +0000</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>0.5.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[
+### Added
+
+- Wombat keeps itself up to date. The download checks for a new version once a day, downloads it in the background and installs it when you quit Wombat, so it's there the next time you open it. Wombat › Check for Updates… checks at once, and Settings › Check for updates automatically turns the daily checks off. Each update must carry Wombat's signature before it's unpacked. Copies of 0.4.0 can't update themselves: replace that one by hand. The Mac App Store version has no updater, since the App Store updates it.
+- The Help menu opens Wombat's website, the support page and the privacy policy.
+
+### Changed
+
+- The privacy policy says what an update check sends: your IP address to GitHub, which hosts the feed, and Wombat's and the updater's versions, with no profile of your Mac. It also says how to turn checks off and that the App Store version doesn't check, and its list of what to delete to remove Wombat's data includes the folder where macOS keeps Wombat's network data. The support page explains how each version updates.
+]]></description>
+      <enclosure url="https://github.com/defiant/wombat-reader/releases/download/v0.5.0/Wombat-0.5.0.dmg" length="6265371" type="application/octet-stream" sparkle:edSignature="ABAtoKSdDbZcpUe5ihrBRV52wbcUxv8JYBse/rtyTJT2w27yrhSP1EfZRUEuj3IHkmLtvq6479yfPW6Ute0fCg=="/>
+    </item>
+  </channel>
+</rss>

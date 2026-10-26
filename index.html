@@ -32,19 +32,19 @@
         <p class="lede">A fast, native Markdown viewer for your Mac.</p>
         <p>Open a file, drop a folder, or paste some Markdown, and read it the way GitHub shows it. Wombat is built with AppKit and TextKit, with no web view and no browser engine inside.</p>
 
-        <section class="download" id="download" data-state="off" aria-label="Download">
+        <section class="download" id="download" data-state="on" aria-label="Download">
           <!--
-            DOWNLOAD PLACEHOLDER. The download is switched off until a notarized disk image exists.
-            To switch it on, change data-state="off" above to data-state="on", and check the link and
-            version in the "on" block below. Steps: site/README.md, "Turn the download on".
+            DOWNLOAD PLACEHOLDER. The download is switched off until a notarized disk image is released.
+            `make publish` switches it on (data-state="on" above) and puts the version it releases in
+            the "on" block below. Steps: site/README.md, "Turn the download on".
           -->
           <div class="off">
             <button class="button" type="button" disabled>Download for Mac</button>
             <p class="note">Coming soon. The notarized download isn't published yet.</p>
           </div>
           <div class="on">
-            <a class="button" href="https://github.com/defiant/wombat-reader/releases/latest">Download for Mac</a>
-            <p class="note">Version 0.4.0, a disk image signed and notarized by Apple.</p>
+            <a class="button" href="https://github.com/defiant/wombat-reader/releases/latest/download/Wombat.dmg">Download for Mac</a>
+            <p class="note">Version 0.5.0, a disk image signed and notarized by Apple.</p>
           </div>
           <p class="note">Needs a Mac with Apple silicon and macOS 26 Tahoe or later.</p>
         </section>
@@ -85,7 +85,7 @@
       </article>
       <article class="feature">
         <h3>Private by design</h3>
-        <p>No accounts, no analytics, no tracking. The only thing Wombat fetches from the internet is an image your document links to. <a href="privacy.html">Read the privacy policy</a>.</p>
+        <p>No accounts, no analytics, no tracking. Wombat fetches the images your documents link to and, in the download from this site, checks once a day for a new version. <a href="privacy.html">Read the privacy policy</a>.</p>
       </article>
     </div>
 

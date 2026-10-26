@@ -26,14 +26,14 @@
 <main class="page">
   <div class="wrap">
     <h1>Privacy policy</h1>
-    <p class="meta">Last updated <time datetime="2026-10-25">25 October 2026</time></p>
+    <p class="meta">Last updated <time datetime="2026-10-26">26 October 2026</time></p>
 
     <div class="summary">
       <h2>The short version</h2>
       <ul>
         <li>Wombat collects no personal information. It has no accounts, no analytics, no advertising and no tracking, and nothing is sent to me or to anyone else for me.</li>
         <li>Your documents stay on your Mac. Wombat reads the files and folders you open to show them, and never uploads them.</li>
-        <li>The one time Wombat uses the internet is to show an image that a document links to. It asks the server that hosts the image directly.</li>
+        <li>Wombat uses the internet to show an image that a document links to, asking the server that hosts the image directly. The version downloaded from this website also checks once a day for a new version of Wombat; you can turn that off.</li>
         <li>Wombat's settings and your reading positions stay on your Mac.</li>
       </ul>
     </div>
@@ -57,8 +57,14 @@
     <h2 id="images">Images from the internet</h2>
     <p>A Markdown file can point to an image on the web, such as the badges at the top of a README. When a document does, Wombat downloads that image straight from the server the document names, in the app and in Quick Look. That server sees what any server sees when a Mac asks it for a file: your IP address, the address of the image, and basic details of the request such as the app's name and your macOS version. I don't see any of it and I don't run those servers; whoever does has their own privacy policy.</p>
     <p>Wombat has no setting to turn this off, so if a document links to images you'd rather not request, open it while your Mac is offline.</p>
-    <p>Downloaded images are kept in memory while Wombat runs. macOS also keeps its usual cache of web downloads in Wombat's own cache folder on your Mac, so that a repeat request can be quicker. It stays on your Mac, I never receive it, and you can delete it any time (see below).</p>
+    <p>Downloaded images are kept in memory while Wombat runs. macOS also keeps its usual cache of web downloads in Wombat's own cache folder on your Mac, so that a repeat request can be quicker, and the network data it keeps for any app, such as which servers accept only secure connections, in a folder of Wombat's own. Both stay on your Mac, I never receive them, and you can delete them any time (see below).</p>
     <p>When you click a web link in a document, Wombat hands it to your default browser. Wombat itself doesn't contact the site.</p>
+
+    <h2 id="updates">Checking for updates</h2>
+    <p>The version you download from this website keeps itself up to date, using an open-source updater called Sparkle. When Wombat starts, if it hasn't checked in the past day, and then once a day while it runs, it downloads a short list of Wombat's versions (the update feed) from this website. It does the same when you choose Wombat &rsaquo; Check for Updates…. If there's a newer version, Wombat downloads it from GitHub, checks that it's signed by me, and installs it when you quit Wombat.</p>
+    <p>That request tells GitHub, which hosts this website and the downloads, what any web request does: your IP address, and the app's name and version and the updater's version in the request's User-Agent header, such as &ldquo;Wombat/0.5.0 Sparkle/2.10.1&rdquo;, along with the languages your Mac prefers. It sends nothing about you, your documents or how you use Wombat. Sparkle can also send an anonymous profile of your Mac with each check; Wombat has that switched off.</p>
+    <p>To stop the daily checks, turn off Wombat &rsaquo; Settings… &rsaquo; Check for updates automatically. Check for Updates… still checks when you choose it.</p>
+    <p>The version from the Mac App Store doesn't check, and contains no updater: the App Store keeps it up to date.</p>
 
     <h2 id="stored">What Wombat keeps on your Mac</h2>
     <p>To work the way you left it, Wombat remembers a few things in its settings on your Mac:</p>
@@ -66,14 +72,15 @@
       <li>your reading settings: appearance, font, text size, line width, line spacing, zoom, which side the table of contents is on, whether files open in windows or tabs, and what the sidebar shows;</li>
       <li>the size and arrangement of its windows;</li>
       <li>your place in the files you've read: the file's location on your Mac and the line at the top of the window, for the last 300 files;</li>
-      <li>for each folder you've opened, the file that was open in it.</li>
+      <li>for each folder you've opened, the file that was open in it;</li>
+      <li>in the version from this website, whether to check for updates and when it last checked. A new version waits in Wombat's cache folder until it's installed.</li>
     </ul>
     <p>macOS itself keeps File &rsaquo; Open Recent and which windows were open, so they can come back when you relaunch. None of this is sent anywhere or synced by Wombat. Your Mac's own backups, such as Time Machine, may include it, as they do for any app's settings.</p>
     <p>To remove it, quit Wombat and delete these folders and files, then delete the app. Settings &rsaquo; Restore Defaults only resets the reading settings.</p>
     <!-- Bundle IDs and paths below must match the shipped builds. If the App Store build uses another bundle ID, update them. -->
     <dl class="paths">
       <dt>Downloaded from this website</dt>
-      <dd><code>~/Library/<wbr>Preferences/<wbr>dev.taga.wombat.plist</code> and <code>~/Library/<wbr>Caches/<wbr>dev.taga.wombat</code></dd>
+      <dd><code>~/Library/<wbr>Preferences/<wbr>dev.taga.wombat.plist</code>, <code>~/Library/<wbr>Caches/<wbr>dev.taga.wombat</code> and <code>~/Library/<wbr>HTTPStorages/<wbr>dev.taga.wombat</code></dd>
       <dt>From the Mac App Store</dt>
       <dd><code>~/Library/<wbr>Containers/<wbr>dev.taga.wombat</code> (Wombat's sandbox: settings, cache and everything else it stores)</dd>
     </dl>
@@ -84,7 +91,7 @@
     <h2 id="website">This website</h2>
     <p>These pages are plain HTML and CSS. They set no cookies, run no scripts, and load no fonts, images or code from anywhere else, and I use no analytics on them. The company that hosts the pages sees the usual details of a web request, such as your IP address, the page you asked for and your browser's name, in order to serve them, under its own privacy policy.</p>
     <!-- If the disk image is hosted somewhere other than GitHub Releases, change the next sentence. -->
-    <p>The disk image you can download from this website is hosted by GitHub, which has its own privacy statement.</p>
+    <p>The disk image you can download from this website, and the update feed and new versions that Wombat downloads, are hosted by GitHub, which has its own privacy statement. GitHub shows me how many times each disk image has been downloaded, as a count, with nothing about who downloaded it.</p>
 
     <h2 id="email">If you write to me</h2>
     <p>When you email me for help, I receive your email address and whatever you write or attach. I use it to answer you and to fix the problem, I don't share it, and I delete it when it's no longer needed or when you ask. Please don't send documents you wouldn't want me to read; a small made-up example that shows the problem is best.</p>
