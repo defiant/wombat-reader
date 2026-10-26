@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support – Wombat</title>
+<meta name="description" content="Help with Wombat, a native Markdown viewer for Mac: how to get in touch, system requirements, and answers about opening files, default apps, Quick Look and folder access.">
+<meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16110d" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="img/icon-64.png">
+<link rel="apple-touch-icon" href="img/icon-256.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="img/icon-64.png" width="32" height="32" alt="">Wombat</a>
+    <nav aria-label="Main">
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <h1>Support</h1>
+    <p class="lede">Wombat is a small project, and I'm glad to help.</p>
+
+    <h2 id="contact">Get in touch</h2>
+    <p>Write to <a href="mailto:wombat@taga.dev">wombat@taga.dev</a> with a question, a bug, or something Wombat should do. I'll reply as soon as I can.</p>
+    <p>It helps to include:</p>
+    <ul>
+      <li>your macOS version (Apple menu &rsaquo; About This Mac) and Wombat's version (Wombat &rsaquo; About Wombat);</li>
+      <li>what you did, what you expected and what happened instead;</li>
+      <li>for a page that looks wrong, a small Markdown file that shows it. Please make one up rather than sending a private document.</li>
+    </ul>
+    <p>How Wombat treats your data is in the <a href="privacy.html">privacy policy</a>: in short, it collects nothing.</p>
+
+    <h2 id="requirements">Requirements</h2>
+    <ul>
+      <li>macOS 26 Tahoe or later.</li>
+      <li>A Mac with Apple silicon (M1 or later). Intel Macs aren't supported.</li>
+      <li>An internet connection only if your documents link to images on the web. Everything else works offline.</li>
+    </ul>
+
+    <h2 id="questions">Questions and answers</h2>
+    <ul class="contents">
+      <li><a href="#open">Opening files and folders</a></li>
+      <li><a href="#default-app">Making Wombat the default app</a></li>
+      <li><a href="#quick-look">Quick Look</a></li>
+      <li><a href="#folder-access">Folder access</a></li>
+      <li><a href="#images">Images that don't show</a></li>
+      <li><a href="#settings">Text size and appearance</a></li>
+      <li><a href="#editing">Editing</a></li>
+      <li><a href="#export">Exporting and copying</a></li>
+    </ul>
+
+    <h3 id="open">How do I open a file or a folder?</h3>
+    <p>Choose File &rsaquo; Open… (<kbd>⌘O</kbd>) and pick a Markdown file or a folder. You can also drag one onto Wombat's window or its Dock icon, open a file from Finder, or paste Markdown with <kbd>⌘V</kbd> in an empty window or File &rsaquo; New from Clipboard (<kbd>⌘N</kbd>).</p>
+    <p>A folder opens as a workspace: its Markdown files in a sidebar, the file you're reading in the middle and its table of contents beside it. Open Quickly (<kbd>⇧⌘O</kbd>) finds a file by a few letters of its name, and Find in Files (<kbd>⇧⌘F</kbd>) searches the text of all of them. Documents reload when they change on disk.</p>
+
+    <h3 id="default-app">How do I make Wombat the default app for Markdown files?</h3>
+    <p>In Finder, select a Markdown file (<code>.md</code>), choose File &rsaquo; Get Info (<kbd>⌘I</kbd>), pick Wombat under Open with, then click Change All… and confirm. From then on, double-clicking Markdown files opens them in Wombat.</p>
+
+    <h3 id="quick-look">How does Quick Look work, and why do I see plain text?</h3>
+    <p>Select a Markdown file in Finder and press <kbd>Space</kbd>. The preview is drawn by the same renderer as the app, so it looks the same.</p>
+    <p>If you get plain text instead, open Wombat once so macOS finds its preview extension, then look in System Settings &rsaquo; General &rsaquo; Login Items &amp; Extensions, under Extensions, for Quick Look, and make sure Wombat is switched on. If another Markdown previewer is installed, turn that one off. As a last resort, reset Quick Look by running <code>qlmanage -r</code> and then <code>qlmanage -r cache</code> in Terminal.</p>
+
+    <h3 id="folder-access">Why does Wombat ask for access to a folder?</h3>
+    <!-- VERIFY against the sandboxed build before publishing: the prompt's wording and whether the permission is remembered. -->
+    <p><strong>In the Mac App Store version,</strong> apps run in macOS's App Sandbox, which lets an app read only what you've given it. Wombat can read a file you open, but a Markdown file often refers to other files beside it: images, and other notes it links to. When a document needs something in a folder Wombat hasn't been given, it asks you to allow access to that folder. Choose the folder once and Wombat keeps the permission, so it doesn't ask again for the same folder.</p>
+    <p>The simplest way to avoid the question is to open the folder itself (File &rsaquo; Open…, then choose the folder) instead of a single file. Everything inside it is then available, including images and links between files. Wombat only reads what you give it, never changes your files, and sends nothing anywhere.</p>
+    <p><strong>In the download from this website,</strong> Wombat isn't sandboxed, so there is no such question. macOS may still ask the first time whether Wombat can use files in folders such as Documents, Desktop or Downloads: choose Allow.</p>
+
+    <h3 id="images">Why doesn't an image show?</h3>
+    <ul>
+      <li><strong>An image on the web</strong> needs an internet connection. If it failed to load, Wombat tries again after a little while, or right away with File &rsaquo; Reload (<kbd>⌘R</kbd>).</li>
+      <li><strong>An image next to your file</strong> is found by the path written in the Markdown, relative to the file, so check the path and the capitalization of the name. In the App Store version it also has to be in a folder Wombat has been given access to: see <a href="#folder-access">folder access</a>.</li>
+    </ul>
+
+    <h3 id="settings">How do I change the text size, font or appearance?</h3>
+    <p>Choose Wombat &rsaquo; Settings… (<kbd>⌘,</kbd>) for light or dark, the font, text size, line width and line spacing, which side the table of contents is on, and whether files open in new windows or tabs. <kbd>⌘+</kbd> and <kbd>⌘−</kbd> zoom, and <kbd>⌘0</kbd> returns to actual size.</p>
+
+    <h3 id="editing">Can I edit a document in Wombat?</h3>
+    <p>No, Wombat is a viewer. Edit the file in any editor you like and Wombat shows the new version as soon as you save.</p>
+
+    <h3 id="export">How do I export or copy a page?</h3>
+    <p>File &rsaquo; Export as PDF… and Export as HTML… save the document you're reading. Edit &rsaquo; Copy as Markdown (<kbd>⌥⌘C</kbd>) and Copy as HTML (<kbd>⌥⇧⌘C</kbd>) copy what you've selected. Rest the pointer on a table, an image or a code block to show a button that copies all of it, and right-click a table to copy it as CSV.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap bar">
+    <p>&copy; 2026 Sinan Taga</p>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wombat: a fast, native Markdown viewer for Mac</title>
+<meta name="description" content="Wombat is a fast, native Markdown viewer for macOS. Open a file or a folder and read it the way GitHub shows it, with math, diagrams and Quick Look. No accounts, no tracking.">
+<meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16110d" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="img/icon-64.png">
+<link rel="apple-touch-icon" href="img/icon-256.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap wide bar">
+    <a class="brand" href="index.html"><img src="img/icon-64.png" width="32" height="32" alt="">Wombat</a>
+    <nav aria-label="Main">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap wide">
+    <section class="hero">
+      <div>
+        <img class="icon" src="img/icon-256.png" width="112" height="112" alt="Wombat's icon: a wombat reading a page">
+        <h1>Wombat</h1>
+        <p class="lede">A fast, native Markdown viewer for your Mac.</p>
+        <p>Open a file, drop a folder, or paste some Markdown, and read it the way GitHub shows it. Wombat is built with AppKit and TextKit, with no web view and no browser engine inside.</p>
+
+        <section class="download" id="download" data-state="off" aria-label="Download">
+          <!--
+            DOWNLOAD PLACEHOLDER. The download is switched off until a notarized disk image exists.
+            To switch it on, change data-state="off" above to data-state="on", and check the link and
+            version in the "on" block below. Steps: site/README.md, "Turn the download on".
+          -->
+          <div class="off">
+            <button class="button" type="button" disabled>Download for Mac</button>
+            <p class="note">Coming soon. The notarized download isn't published yet.</p>
+          </div>
+          <div class="on">
+            <a class="button" href="https://github.com/defiant/wombat-reader/releases/latest">Download for Mac</a>
+            <p class="note">Version 0.4.0, a disk image signed and notarized by Apple.</p>
+          </div>
+          <p class="note">Needs a Mac with Apple silicon and macOS 26 Tahoe or later.</p>
+        </section>
+      </div>
+
+      <figure class="shot">
+        <div class="frame">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="img/screenshot-dark.png">
+            <img src="img/screenshot-light.png" width="760" height="857" alt="A short Markdown note as Wombat shows it: a heading, a tip callout, a task list, a table, highlighted code, a formula and a flowchart.">
+          </picture>
+        </div>
+        <figcaption>A short note as Wombat draws it. Light and dark follow your Mac.</figcaption>
+      </figure>
+    </section>
+
+    <h2 class="section-title">What it does</h2>
+    <div class="features">
+      <article class="feature">
+        <h3>Reads like GitHub</h3>
+        <p>GitHub Flavored Markdown through cmark-gfm, the parser GitHub itself uses: tables, task lists, footnotes, alerts, emoji, front matter, the HTML READMEs use, and colored code.</p>
+      </article>
+      <article class="feature">
+        <h3>Files and folders</h3>
+        <p>Open a folder to get its Markdown files in a sidebar, the table of contents beside the page, links and [[wiki links]] that open in place, and Open Quickly and Find in Files. Documents reload when they change on disk.</p>
+      </article>
+      <article class="feature">
+        <h3>Math and diagrams</h3>
+        <p>Formulas are typeset by TeX's rules, and Mermaid flowcharts, sequence diagrams, Gantt charts, mind maps and more are drawn as vector graphics. Nothing is rendered by a web page.</p>
+      </article>
+      <article class="feature">
+        <h3>Quick Look</h3>
+        <p>Press Space on a Markdown file in Finder and get a preview drawn by the same renderer as the app.</p>
+      </article>
+      <article class="feature">
+        <h3>Export and copy</h3>
+        <p>Export a page as a PDF or as one self-contained HTML file. Rest the pointer on a table, an image or a code block to copy it, and tables paste into spreadsheets as tables.</p>
+      </article>
+      <article class="feature">
+        <h3>Private by design</h3>
+        <p>No accounts, no analytics, no tracking. The only thing Wombat fetches from the internet is an image your document links to. <a href="privacy.html">Read the privacy policy</a>.</p>
+      </article>
+    </div>
+
+    <h2 class="section-title">Questions?</h2>
+    <p>The <a href="support.html">support page</a> covers getting started, making Wombat your default Markdown app and Quick Look, and says how to reach me.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap wide bar">
+    <p>&copy; 2026 Sinan Taga. No cookies, no scripts, no tracking on this site.</p>
+    <div class="links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

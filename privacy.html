@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy – Wombat</title>
+<meta name="description" content="Wombat's privacy policy: no accounts, no analytics, no tracking. Your documents and settings stay on your Mac.">
+<meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16110d" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="img/icon-64.png">
+<link rel="apple-touch-icon" href="img/icon-256.png">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><img src="img/icon-64.png" width="32" height="32" alt="">Wombat</a>
+    <nav aria-label="Main">
+      <a href="support.html">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap">
+    <h1>Privacy policy</h1>
+    <p class="meta">Last updated <time datetime="2026-10-25">25 October 2026</time></p>
+
+    <div class="summary">
+      <h2>The short version</h2>
+      <ul>
+        <li>Wombat collects no personal information. It has no accounts, no analytics, no advertising and no tracking, and nothing is sent to me or to anyone else for me.</li>
+        <li>Your documents stay on your Mac. Wombat reads the files and folders you open to show them, and never uploads them.</li>
+        <li>The one time Wombat uses the internet is to show an image that a document links to. It asks the server that hosts the image directly.</li>
+        <li>Wombat's settings and your reading positions stay on your Mac.</li>
+      </ul>
+    </div>
+
+    <h2 id="who">Who this covers</h2>
+    <p>This policy covers the Wombat app for Mac, including its Quick Look preview, which is part of the app, and this website. Wombat is made by Sinan Taga (&ldquo;I&rdquo; below), who is responsible for this policy. You can reach me at <a href="mailto:wombat@taga.dev">wombat@taga.dev</a>.</p>
+
+    <h2 id="not-collected">What Wombat does not do</h2>
+    <ul>
+      <li>It has no accounts, sign-in or purchases inside the app.</li>
+      <li>It has no analytics, usage statistics or crash reporting of its own.</li>
+      <li>It contains no advertising or tracking code, mine or anyone else's.</li>
+      <li>It doesn't send me, or anyone else, your documents, file names, settings or anything about how you use it.</li>
+    </ul>
+    <p>Because I receive no data from Wombat, I have nothing to sell, share or lose.</p>
+
+    <h2 id="documents">Your documents</h2>
+    <p>Wombat opens the Markdown files and folders you choose: through File &rsaquo; Open, by dropping them on its window or Dock icon, from Finder, or when you press Space on a file for Quick Look. It reads them on your Mac to draw them, and that is all it does with them. It is a viewer, so it never changes your files. If you use Export as PDF or Export as HTML, the new file is written where you choose in the save panel.</p>
+    <p>Markdown you paste, or copy from a document, is only used for what you asked: pasted text is shown in a window and isn't written to disk by Wombat, and what you copy goes to the clipboard for the app you paste into.</p>
+
+    <h2 id="images">Images from the internet</h2>
+    <p>A Markdown file can point to an image on the web, such as the badges at the top of a README. When a document does, Wombat downloads that image straight from the server the document names, in the app and in Quick Look. That server sees what any server sees when a Mac asks it for a file: your IP address, the address of the image, and basic details of the request such as the app's name and your macOS version. I don't see any of it and I don't run those servers; whoever does has their own privacy policy.</p>
+    <p>Wombat has no setting to turn this off, so if a document links to images you'd rather not request, open it while your Mac is offline.</p>
+    <p>Downloaded images are kept in memory while Wombat runs. macOS also keeps its usual cache of web downloads in Wombat's own cache folder on your Mac, so that a repeat request can be quicker. It stays on your Mac, I never receive it, and you can delete it any time (see below).</p>
+    <p>When you click a web link in a document, Wombat hands it to your default browser. Wombat itself doesn't contact the site.</p>
+
+    <h2 id="stored">What Wombat keeps on your Mac</h2>
+    <p>To work the way you left it, Wombat remembers a few things in its settings on your Mac:</p>
+    <ul>
+      <li>your reading settings: appearance, font, text size, line width, line spacing, zoom, which side the table of contents is on, whether files open in windows or tabs, and what the sidebar shows;</li>
+      <li>the size and arrangement of its windows;</li>
+      <li>your place in the files you've read: the file's location on your Mac and the line at the top of the window, for the last 300 files;</li>
+      <li>for each folder you've opened, the file that was open in it.</li>
+    </ul>
+    <p>macOS itself keeps File &rsaquo; Open Recent and which windows were open, so they can come back when you relaunch. None of this is sent anywhere or synced by Wombat. Your Mac's own backups, such as Time Machine, may include it, as they do for any app's settings.</p>
+    <p>To remove it, quit Wombat and delete these folders and files, then delete the app. Settings &rsaquo; Restore Defaults only resets the reading settings.</p>
+    <!-- Bundle IDs and paths below must match the shipped builds. If the App Store build uses another bundle ID, update them. -->
+    <dl class="paths">
+      <dt>Downloaded from this website</dt>
+      <dd><code>~/Library/<wbr>Preferences/<wbr>dev.taga.wombat.plist</code> and <code>~/Library/<wbr>Caches/<wbr>dev.taga.wombat</code></dd>
+      <dt>From the Mac App Store</dt>
+      <dd><code>~/Library/<wbr>Containers/<wbr>dev.taga.wombat</code> (Wombat's sandbox: settings, cache and everything else it stores)</dd>
+    </dl>
+
+    <h2 id="apple">Apple</h2>
+    <p>If you get Wombat from the Mac App Store, Apple handles the download, any payment and its own records under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>; I don't see your Apple Account or payment details. If you've chosen in System Settings to share analytics with app developers, Apple may give me anonymous, summed-up statistics such as downloads and crashes. They can't tell me who you are, and Wombat doesn't collect them itself.</p>
+
+    <h2 id="website">This website</h2>
+    <p>These pages are plain HTML and CSS. They set no cookies, run no scripts, and load no fonts, images or code from anywhere else, and I use no analytics on them. The company that hosts the pages sees the usual details of a web request, such as your IP address, the page you asked for and your browser's name, in order to serve them, under its own privacy policy.</p>
+    <!-- If the disk image is hosted somewhere other than GitHub Releases, change the next sentence. -->
+    <p>The disk image you can download from this website is hosted by GitHub, which has its own privacy statement.</p>
+
+    <h2 id="email">If you write to me</h2>
+    <p>When you email me for help, I receive your email address and whatever you write or attach. I use it to answer you and to fix the problem, I don't share it, and I delete it when it's no longer needed or when you ask. Please don't send documents you wouldn't want me to read; a small made-up example that shows the problem is best.</p>
+
+    <h2 id="rights">Your rights</h2>
+    <p>I hold no data about you from the app, so there is nothing to show, correct or delete there. For emails you've sent me, you can ask what I have, ask me to correct it or ask me to delete it at <a href="mailto:wombat@taga.dev">wombat@taga.dev</a>. If you think I've handled your data wrongly, you can also complain to your local data protection authority.</p>
+
+    <h2 id="children">Children</h2>
+    <p>Wombat isn't aimed at children. Because it collects no data, it collects none from them either.</p>
+
+    <h2 id="changes">Changes to this policy</h2>
+    <p>If Wombat ever changes in a way that affects this policy, I'll update this page and its date before the change ships, and say what changed in the release notes.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Questions about privacy: <a href="mailto:wombat@taga.dev">wombat@taga.dev</a>. For help using Wombat, see the <a href="support.html">support page</a>.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap bar">
+    <p>&copy; 2026 Sinan Taga</p>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
