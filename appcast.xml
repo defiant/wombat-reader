@@ -9,6 +9,21 @@
     <language>en</language>
     <!-- make publish adds releases below this line, newest first -->
     <item>
+      <title>Wombat 0.5.3</title>
+      <pubDate>Tue, 27 Oct 2026 06:41:30 +0000</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>0.5.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[
+### Fixed
+
+- Quick Look previews work. Pressing Space on a Markdown file in Finder used to say "Extension dev.taga.wombat.QuickLook failed during preview of this document" and show plain text instead. That happened for every file in every version since 0.4.0, which added the preview: the extension crashed before it read the file. Finder now shows the file rendered by Wombat, as the app shows it.
+- Choosing an Appearance in Settings changes the appearance once Settings has finished handling the click rather than in the middle of it, and so does Restore Defaults. This is aimed at the Open files in and Table of contents pickers being drawn as a sliver with "…" after a click on Appearance on macOS 26, until you clicked something else. That couldn't be reproduced while the change was made, so it isn't yet confirmed to fix it.
+]]></description>
+      <enclosure url="https://github.com/defiant/wombat-reader/releases/download/v0.5.3/Wombat-0.5.3.dmg" length="6313638" type="application/octet-stream" sparkle:edSignature="Yrj38BYquQJ0fwTNx53nhuiA7ZkL1vT0+nruPqoJUpPncmjA70DxvGazGQGoxI49gYGCfygKtb0suQDesLw2AQ=="/>
+    </item>
+    <item>
       <title>Wombat 0.5.2</title>
       <pubDate>Mon, 26 Oct 2026 22:09:06 +0000</pubDate>
       <sparkle:version>7</sparkle:version>
