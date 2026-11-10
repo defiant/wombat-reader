@@ -73,16 +73,17 @@
       <li>the size and arrangement of its windows;</li>
       <li>your place in the files you've read: the file's location on your Mac and the line at the top of the window, for the last 300 files;</li>
       <li>for each folder you've opened, the file that was open in it;</li>
+      <li>in the version from the Mac App Store, the folders you've allowed it to read, as macOS bookmarks that include their locations, for the 50 used most recently;</li>
       <li>in the version from this website, whether to check for updates and when it last checked. A new version waits in Wombat's cache folder until it's installed.</li>
     </ul>
     <p>macOS itself keeps File &rsaquo; Open Recent and which windows were open, so they can come back when you relaunch. None of this is sent anywhere or synced by Wombat. Your Mac's own backups, such as Time Machine, may include it, as they do for any app's settings.</p>
     <p>To remove it, quit Wombat and delete these folders and files, then delete the app. Settings &rsaquo; Restore Defaults only resets the reading settings.</p>
-    <!-- Bundle IDs and paths below must match the shipped builds. If the App Store build uses another bundle ID, update them. -->
+    <!-- Bundle IDs and paths below must match the shipped builds: dev.taga.wombat for the app and dev.taga.wombat.QuickLook for its Quick Look extension. If either changes, update them. -->
     <dl class="paths">
       <dt>Downloaded from this website</dt>
-      <dd><code>~/Library/<wbr>Preferences/<wbr>dev.taga.wombat.plist</code>, <code>~/Library/<wbr>Caches/<wbr>dev.taga.wombat</code> and <code>~/Library/<wbr>HTTPStorages/<wbr>dev.taga.wombat</code></dd>
+      <dd><code>~/Library/<wbr>Preferences/<wbr>dev.taga.wombat.plist</code>, <code>~/Library/<wbr>Caches/<wbr>dev.taga.wombat</code> and <code>~/Library/<wbr>HTTPStorages/<wbr>dev.taga.wombat</code>, and <code>~/Library/<wbr>Containers/<wbr>dev.taga.wombat.QuickLook</code> (Quick Look's sandbox, with its cache of web images)</dd>
       <dt>From the Mac App Store</dt>
-      <dd><code>~/Library/<wbr>Containers/<wbr>dev.taga.wombat</code> (Wombat's sandbox: settings, cache and everything else it stores)</dd>
+      <dd><code>~/Library/<wbr>Containers/<wbr>dev.taga.wombat</code> and <code>~/Library/<wbr>Containers/<wbr>dev.taga.wombat.QuickLook</code> (the sandboxes of Wombat and of its Quick Look preview: settings, caches and everything else they store). Finder may show them as Wombat and Wombat Quick Look.</dd>
     </dl>
 
     <h2 id="apple">Apple</h2>

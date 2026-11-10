@@ -9,6 +9,29 @@
     <language>en</language>
     <!-- make publish adds releases below this line, newest first -->
     <item>
+      <title>Wombat 0.5.4</title>
+      <pubDate>Tue, 10 Nov 2026 15:35:29 +0000</pubDate>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>0.5.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[
+### Added
+
+- Mermaid diagrams have copy buttons. Rest the pointer on one and the button in its corner copies it as a picture, a PDF and a PNG drawn in the light appearance at the diagram's own size, even where the page shrinks it to fit the column. Right-click a diagram for Copy Image, or for Copy Source, which copies its Mermaid as written in the fence. As with images, diagrams smaller than 64 × 48 points get no button, since it would cover them; a flowchart that is a single row of boxes is often that small, and right-click still copies it.
+- Raw HTML tables and the front matter table have copy buttons, and Copy Table as CSV and as Markdown on right-click, as Markdown tables do. Markdown tables still copy from their source; these are read back from the page. The first row is the header when all its cells are header cells (`<th>`, or the front matter's keys). Bold, italic, strikethrough, code, links, images and math become Markdown, and links and images in the document's folder or repository stay relative to it. A cell spanning rows or columns keeps its content in its first position and leaves the rest empty. Formatting Markdown has no syntax for, such as `<sup>` or `<u>`, copies as plain text.
+- Help › Acknowledgements shows the licenses of the open-source code in Wombat: cmark-gfm, which parses Markdown, gemoji's emoji names and, in the download, Sparkle.
+
+### Fixed
+
+- A raw HTML `<table>` that starts a list item has the item's bullet beside it, as a Markdown table does. The bullet used to be drawn inside the table's first cell.
+- Right-click finds a formula that reaches below the line, such as a fraction, where it is drawn. It used to look for it lower by the part below the line, so the top of a tall formula offered no Copy Image or Copy Source.
+- Copied Markdown tables escape `&` where it would start a character reference, so a cell showing `&copy;` doesn't paste as ©.
+- File › Open Recent appears once. Wombat built its own beside the one macOS adds by itself.
+]]></description>
+      <enclosure url="https://github.com/defiant/wombat-reader/releases/download/v0.5.4/Wombat-0.5.4.dmg" length="6358678" type="application/octet-stream" sparkle:edSignature="UB/L5w0Ri++8fC3Su+KdipEvLUoZ+LYqq1+UvDwQ5vOvSdU6gB2yvjOgxdmhHWUVbhzv0C2T58Oj8YSQag8FBQ=="/>
+    </item>
+    <item>
       <title>Wombat 0.5.3</title>
       <pubDate>Tue, 27 Oct 2026 06:41:30 +0000</pubDate>
       <sparkle:version>8</sparkle:version>
