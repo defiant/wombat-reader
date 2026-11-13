@@ -48,6 +48,7 @@
     <h2 id="questions">Questions and answers</h2>
     <ul class="contents">
       <li><a href="#open">Opening files and folders</a></li>
+      <li><a href="#formats">The files Wombat opens</a></li>
       <li><a href="#default-app">Making Wombat the default app</a></li>
       <li><a href="#quick-look">Quick Look</a></li>
       <li><a href="#folder-access">Folder access</a></li>
@@ -60,8 +61,12 @@
     </ul>
 
     <h3 id="open">How do I open a file or a folder?</h3>
-    <p>Choose File &rsaquo; Open… (<kbd>⌘O</kbd>) and pick a Markdown file or a folder. You can also drag one onto Wombat's window or its Dock icon, open a file from Finder, or paste Markdown with <kbd>⌘V</kbd> in an empty window or File &rsaquo; New from Clipboard (<kbd>⌘N</kbd>).</p>
-    <p>A folder opens as a workspace: its Markdown files in a sidebar, the file you're reading in the middle and its table of contents beside it. Open Quickly (<kbd>⇧⌘O</kbd>) finds a file by a few letters of its name, and Find in Files (<kbd>⇧⌘F</kbd>) searches the text of all of them. Documents reload when they change on disk.</p>
+    <p>Choose File &rsaquo; Open… (<kbd>⌘O</kbd>) and pick a Markdown file or a folder. You can also drag one onto Wombat's window or its Dock icon, open a file from Finder, or paste Markdown with <kbd>⌘V</kbd> in an empty window or File &rsaquo; New from Clipboard (<kbd>⌘N</kbd>). From version 0.6.0 on, pasting a link to a Markdown file on the web, or to a file's page on GitHub, shows the file itself, and pasted text that is plainly JSON, XML, an SVG, a Mermaid diagram or a table is shown as that. For other formats, such as YAML, choose View &rsaquo; Show Pasted Text As.</p>
+    <p>A folder opens as a workspace: its files in a sidebar, the file you're reading in the middle and its table of contents beside it. Open Quickly (<kbd>⇧⌘O</kbd>) finds a file by a few letters of its name, and Find in Files (<kbd>⇧⌘F</kbd>) searches the text of all of them. Documents reload when they change on disk.</p>
+
+    <h3 id="formats">Which files does Wombat open?</h3>
+    <p>Markdown (<code>.md</code>, <code>.markdown</code>), and from version 0.6.0 on also Mermaid diagrams (<code>.mmd</code>, <code>.mermaid</code>), SVG pictures, plain text (<code>.txt</code>), JSON (<code>.json</code>, <code>.jsonc</code>), YAML (<code>.yaml</code>, <code>.yml</code>), TOML, INI (<code>.ini</code>, <code>.cfg</code>), XML, CSV, TSV and env files (<code>.env</code>).</p>
+    <p>JSON, YAML, TOML and INI show their text highlighted, with a chevron beside each part that folds. XML shows a tree of its elements, CSV and TSV show a table, and an env file hides its values until you click one or choose View &rsaquo; Show Values. View &rsaquo; Source (<kbd>⌥⌘U</kbd>) shows the text behind any file. Wombat only reads these files and never changes them.</p>
 
     <h3 id="default-app">How do I make Wombat the default app for Markdown files?</h3>
     <p><strong>From version 0.5.2 on,</strong> choose Wombat &rsaquo; Settings… (<kbd>⌘,</kbd>) and click Make Wombat the Default, under Default App. Settings also says which app opens Markdown files now. Wombat becomes the default for every Markdown extension it knows (<code>.md</code>, <code>.markdown</code>, <code>.mdown</code> and the rest), and plain text files stay with the app that opens them.</p>

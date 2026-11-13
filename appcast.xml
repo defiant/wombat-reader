@@ -9,6 +9,34 @@
     <language>en</language>
     <!-- make publish adds releases below this line, newest first -->
     <item>
+      <title>Wombat 0.6.0</title>
+      <pubDate>Fri, 13 Nov 2026 14:05:14 +0000</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>0.6.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[
+- New: File info at a click on the ⓘ beside the word count: name, format, size, lines, date and folder, with links to copy the path or show the file in Finder.
+- New: Pasted JSON, XML, SVG, Mermaid, CSV and TSV open in their own format, and View › Show Pasted Text As chooses for other text.
+- New: A pasted link to a Markdown file opens the file.
+- New: YAML files open highlighted, with keys and list items that fold.
+- New: TOML files open highlighted, with tables that fold.
+- New: CSV and TSV files open as a table, at any size.
+- New: Mermaid files open as their diagram.
+- New: SVG files open as their picture.
+- New: Env files open with their values hidden.
+- New: XML files open as a tree of their elements.
+- New: JSON files open laid out, with objects and arrays that fold.
+- New: INI files open with sections that fold.
+- New: View › Source (⌥⌘U) shows the text behind any file.
+- Changed: A `.txt` file opens as plain text instead of rendered Markdown.
+- Fixed: A file left near its end opens there again.
+- Fixed: A file's place no longer moves up a line when it is opened again.
+- Fixed: View › Source chosen at the top of a file stays at the top.
+]]></description>
+      <enclosure url="https://github.com/defiant/wombat-reader/releases/download/v0.6.0/Wombat-0.6.0.dmg" length="6733090" type="application/octet-stream" sparkle:edSignature="wsB37FKOGjPX8hBInm9N+/9Snt2SBB1xwpbxVENllW9WmZIfJXnE4Fd8EnRg+GyQ36+MfUlnlm0bsnsT2ZFeBQ=="/>
+    </item>
+    <item>
       <title>Wombat 0.5.4</title>
       <pubDate>Tue, 10 Nov 2026 15:35:29 +0000</pubDate>
       <sparkle:version>10</sparkle:version>

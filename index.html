@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wombat: a fast, native Markdown viewer for Mac</title>
-<meta name="description" content="Wombat is a fast, native Markdown viewer for macOS. Open a file or a folder and read it the way GitHub shows it, with math, diagrams and Quick Look. No accounts, no tracking.">
+<title>Wombat: a fast, native viewer for Markdown and data files on Mac</title>
+<meta name="description" content="Wombat is a fast, native viewer for macOS. It shows Markdown the way GitHub does, with math and diagrams, and opens JSON, YAML, TOML, XML and CSV files too. No accounts, no tracking.">
 <meta name="theme-color" content="#fbf6ee" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#16110d" media="(prefers-color-scheme: dark)">
 <link rel="icon" type="image/png" href="img/icon-64.png">
@@ -29,8 +29,8 @@
       <div>
         <img class="icon" src="img/icon-256.png" width="112" height="112" alt="Wombat's icon: a wombat reading a page">
         <h1>Wombat</h1>
-        <p class="lede">A fast, native Markdown viewer for your Mac.</p>
-        <p>Open a file, drop a folder, or paste some Markdown, and read it the way GitHub shows it. Wombat is built with AppKit and TextKit, with no web view and no browser engine inside.</p>
+        <p class="lede">A fast, native viewer for Markdown and the files next to it.</p>
+        <p>Open a file, drop a folder, or paste some Markdown, and read it the way GitHub shows it. JSON, YAML, TOML, XML and CSV files open too, folded, as a tree or as a table. Wombat is built with AppKit and TextKit, with no web view and no browser engine inside.</p>
 
         <section class="download" id="download" data-state="on" aria-label="Download">
           <!--
@@ -44,7 +44,7 @@
           </div>
           <div class="on">
             <a class="button" href="https://github.com/defiant/wombat-reader/releases/latest/download/Wombat.dmg">Download for Mac</a>
-            <p class="note">Version 0.5.4, a disk image signed and notarized by Apple.</p>
+            <p class="note">Version 0.6.0, a disk image signed and notarized by Apple.</p>
           </div>
           <p class="note">Needs a Mac with Apple silicon and macOS 26 Tahoe or later.</p>
           <p class="note">Also on the <a href="https://apps.apple.com/app/id6827317842">Mac App Store</a> as Wombat Reader, which the App Store keeps up to date. Keep one of the two on your Mac, not both: <a href="support.html#both">why</a>.</p>
@@ -70,11 +70,15 @@
       </article>
       <article class="feature">
         <h3>Files and folders</h3>
-        <p>Open a folder to get its Markdown files in a sidebar, the table of contents beside the page, links and [[wiki links]] that open in place, and Open Quickly and Find in Files. Documents reload when they change on disk.</p>
+        <p>Open a folder to get its files in a sidebar, the table of contents beside the page, links and [[wiki links]] that open in place, and Open Quickly and Find in Files. Documents reload when they change on disk.</p>
       </article>
       <article class="feature">
         <h3>Math and diagrams</h3>
         <p>Formulas are typeset by TeX's rules, and Mermaid flowcharts, sequence diagrams, Gantt charts, mind maps and more are drawn as vector graphics. Nothing is rendered by a web page.</p>
+      </article>
+      <article class="feature">
+        <h3>Data and settings files</h3>
+        <p>JSON, YAML, TOML and INI open highlighted, with parts that fold at a click. XML opens as a tree, CSV and TSV as a table that shows a file of any size at once, and env files with their values hidden until you click one.</p>
       </article>
       <article class="feature">
         <h3>Quick Look</h3>

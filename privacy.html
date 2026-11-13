@@ -26,14 +26,14 @@
 <main class="page">
   <div class="wrap">
     <h1>Privacy policy</h1>
-    <p class="meta">Last updated <time datetime="2026-10-26">26 October 2026</time></p>
+    <p class="meta">Last updated <time datetime="2026-11-13">13 November 2026</time></p>
 
     <div class="summary">
       <h2>The short version</h2>
       <ul>
         <li>Wombat collects no personal information. It has no accounts, no analytics, no advertising and no tracking, and nothing is sent to me or to anyone else for me.</li>
         <li>Your documents stay on your Mac. Wombat reads the files and folders you open to show them, and never uploads them.</li>
-        <li>Wombat uses the internet to show an image that a document links to, asking the server that hosts the image directly. The version downloaded from this website also checks once a day for a new version of Wombat; you can turn that off.</li>
+        <li>Wombat uses the internet to show an image that a document links to, and to load a Markdown file when you paste a link to one, asking the server that hosts it directly. The version downloaded from this website also checks once a day for a new version of Wombat; you can turn that off.</li>
         <li>Wombat's settings and your reading positions stay on your Mac.</li>
       </ul>
     </div>
@@ -59,6 +59,9 @@
     <p>Wombat has no setting to turn this off, so if a document links to images you'd rather not request, open it while your Mac is offline.</p>
     <p>Downloaded images are kept in memory while Wombat runs. macOS also keeps its usual cache of web downloads in Wombat's own cache folder on your Mac, so that a repeat request can be quicker, and the network data it keeps for any app, such as which servers accept only secure connections, in a folder of Wombat's own. Both stay on your Mac, I never receive them, and you can delete them any time (see below).</p>
     <p>When you click a web link in a document, Wombat hands it to your default browser. Wombat itself doesn't contact the site.</p>
+
+    <h2 id="links">Links you paste</h2>
+    <p>When you paste a web link to a Markdown file and nothing else, or drop one on the window, Wombat downloads that file from the server the link names and shows it as if you had pasted its text. A link to a file's page on github.com is asked for at raw.githubusercontent.com, GitHub's server for the files themselves. The server sees what it sees for an image: your IP address, the file's address and basic details of the request. The file is kept in memory, as any pasted text is, and is written to disk only if you save it with File &rsaquo; Save…. Wombat doesn't cache this download and sends no cookies with it. A link among other text, or a link to anything but a Markdown file, is shown as text and nothing is downloaded.</p>
 
     <h2 id="updates">Checking for updates</h2>
     <p>The version you download from this website keeps itself up to date, using an open-source updater called Sparkle. When Wombat starts, if it hasn't checked in the past day, and then once a day while it runs, it downloads a short list of Wombat's versions (the update feed) from this website. It does the same when you choose Wombat &rsaquo; Check for Updates…. If there's a newer version, Wombat downloads it from GitHub, checks that it's signed by me, and installs it when you quit Wombat.</p>
